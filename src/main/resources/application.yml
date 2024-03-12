@@ -1,0 +1,14 @@
+spring:
+  docker:
+    compose:
+      enabled: true
+      file: docker-compose.yml
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/task5
+    username: task5user
+    password: task5password
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
